@@ -7,9 +7,10 @@ function totalLetters(array) {
 	return newString.length
 }
 
-//Not functional
 function keyValue(key, value) {
-	return {key: value}
+	var obj = {}
+	obj[key] = value
+	return obj
 }
 
 function negativeIndex(arr, num) {
@@ -29,7 +30,7 @@ function removeM(string) {
 
 function printObject(obj) {
 	for(key in obj) {
-		document.write(key + " is " + obj[key]);
+		document.write(key + " is " + obj[key] + "</br>")
 	}
 }
 
@@ -56,6 +57,7 @@ function twins(array) {
 	}
 	return true
 }
+ 
  function or(array) {
  	for(var i = 0; i < array.length; i++) {
  		if(array[i] === true){
